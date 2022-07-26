@@ -11,14 +11,55 @@ body {
     box-sizing: border-box;
 }
 
+.hero-image {
+    width: 100%;
+}
+
+.header__screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.header__text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 500px;
+    position: relative;
+    bottom: 100px;
+    left: 10px;
+}
+
+.header__text-block {
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.button__transparent {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    margin-top: 15px;
+}
+
+
+
+
 main {
     background-color: #FFFFFF;
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .main__cards-section {
     display: grid;
     margin-top: 50px;
-
     place-items: center;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-columns: 1fr;
@@ -26,8 +67,12 @@ main {
 }
 
 .card {
+    background-color: rgb(127, 255, 212, 0.5);
+    backdrop-filter: blur(20%);
     display: flex;
     flex-direction: column;
+    height: 431px;
+    justify-content: space-between;
 }
 
 .card__product-image {
@@ -36,7 +81,8 @@ main {
 }
 
 .card__description {
-    margin-top: 10px;
+    padding: 10px;
+
     /*display: flex;*/
     justify-content: space-between;
     align-content: center;
@@ -57,11 +103,10 @@ main {
 }
 
 .card__price {
-    margin-top: 10px;
+    padding: 10px;
     display: flex;
     justify-content: start;
     max-width: 275px;
-
 }
 
 .card__price__main {
@@ -79,13 +124,12 @@ main {
 
 
 
+
 .button__black {
     box-sizing: border-box;
-
     text-decoration: none;
     color: #F7F7F7;
     padding: 10px 20px;
-
     background: #1A1A1A;
     border: 1px solid #1A1A1A;
     border-radius: 0px;
