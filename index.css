@@ -5,18 +5,46 @@ body {
     text-align: left;
 }
 
-main {
-    background-color: #FFFFFF;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.card {}
+
+
+
+main {
+    background-color: #FFFFFF;
+
+}
+
+.main__cards-section {
+    display: grid;
+    margin-top: 50px;
+
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-columns: 1fr;
+    grid-row-gap: 56px;
+
+
+}
+
+.card {
+}
 
 .card__product-image {
     height: 341px;
     width: 275px;
 }
 
-.card__description {}
+.card__description {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .card__description__main {
     color: #1A1A1A;
@@ -33,7 +61,11 @@ main {
 }
 
 .card__price {
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card__price__main {
