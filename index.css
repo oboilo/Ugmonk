@@ -1,6 +1,56 @@
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
 }
+
+main {
+    background-color: #FFFFFF;
+}
+
+.card {}
+
+.card__product-image {
+    height: 341px;
+    width: 275px;
+}
+
+.card__description {}
+
+.card__description__main {
+    color: #1A1A1A;
+
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.card__description__additional {
+    color: #A8A8A8;
+
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.card__price {
+    
+}
+
+.card__price__main {
+    color: #808080;
+
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.card__price__sale {
+    color: #FF3451;
+
+    font-size: 13px;
+    line-height: 13px;
+}
+
+
 
 .button__black {
     box-sizing: border-box;
