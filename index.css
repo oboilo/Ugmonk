@@ -11,6 +11,13 @@ body {
     box-sizing: border-box;
 }
 
+.section {
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .hero-image {
     width: 100%;
 }
@@ -32,6 +39,7 @@ body {
     left: 10px;
 }
 
+/*   Section   */
 .header__text-block {
     width: 100%;
     max-width: 1200px;
@@ -46,9 +54,23 @@ body {
     margin-top: 15px;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.nav__left {
+    align-items: center;
 
+}
 
+.nav__right {
+    align-items: center;
+
+}
+
+/*   Section   */
 main {
     background-color: #FFFFFF;
     width: 100%;
