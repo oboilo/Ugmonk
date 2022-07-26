@@ -11,12 +11,8 @@ body {
     box-sizing: border-box;
 }
 
-
-
-
 main {
     background-color: #FFFFFF;
-
 }
 
 .main__cards-section {
@@ -27,11 +23,11 @@ main {
     grid-template-columns: repeat(4, 1fr);
     grid-auto-columns: 1fr;
     grid-row-gap: 56px;
-
-
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
 }
 
 .card__product-image {
@@ -41,43 +37,41 @@ main {
 
 .card__description {
     display: flex;
-    align-content: flex-start;
-    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex;
+    max-width: 275px;
     flex-wrap: wrap;
 }
 
 .card__description__main {
     color: #1A1A1A;
-
     font-size: 15px;
     line-height: 18px;
 }
 
 .card__description__additional {
     color: #A8A8A8;
-
     font-size: 15px;
     line-height: 18px;
 }
 
 .card__price {
+    margin-top: 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: start;
+    max-width: 275px;
+
 }
 
 .card__price__main {
     color: #808080;
-
     font-size: 13px;
     line-height: 13px;
 }
 
 .card__price__sale {
     color: #FF3451;
-
+    margin-left: 10px;
     font-size: 13px;
     line-height: 13px;
 }
