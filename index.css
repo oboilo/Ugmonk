@@ -36,9 +36,10 @@ main {
 }
 
 .card__description {
-    display: flex;
+    margin-top: 10px;
+    /*display: flex;*/
     justify-content: space-between;
-    align-content: flex;
+    align-content: center;
     max-width: 275px;
     flex-wrap: wrap;
 }
