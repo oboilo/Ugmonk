@@ -1,0 +1,15 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.button__black {
+    box-sizing: border-box;
+
+    text-decoration: none;
+    color: #F7F7F7;
+    padding: 10px 20px;
+
+    background: #1A1A1A;
+    border: 1px solid #1A1A1A;
+    border-radius: 0px;
+}
