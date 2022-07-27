@@ -1,0 +1,37 @@
+/*   Sourceset   */
+<img srcset="elva-fairy-320w.jpg,
+             elva-fairy-480w.jpg 1.5x,
+             elva-fairy-640w.jpg 2x"
+     src="elva-fairy-640w.jpg"
+     alt="Elva dressed as a fairy">
+
+
+.hero-heading-right {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 80px 30px;
+    border-bottom: 1px solid #e4ebf3;
+    background-color: #f5f7fa;
+    background-image: url(https://uploads-ssl.webflow.com/627390a…/628e602…_000-404%5B1%5D.png);
+    background-position: 0px 0px;
+    background-size: auto;
+}
+
+.hero-heading-right {
+    position: relative;
+    display: flex;
+    padding: 80px 30px;
+    border-bottom: 1px solid #e4ebf3;
+    background-color: #f5f7fa;
+    background-image: url(Resources/Images/Main content/Design-studio.png);    
+    background-position: 0px 0px;
+    background-size: auto;
+}
+
+
+src="Resources/Images/Main content/Design-studio.png"
+
+    background-image: url(Resources/Images/Main content/Design-studio.png);
