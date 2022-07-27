@@ -32,6 +32,14 @@
 }
 
 
-src="Resources/Images/Main content/Design-studio.png"
+Gather
 
-    background-image: url(Resources/Images/Main content/Design-studio.png);
+The minimal, modular desk organizer that cuts through the clutter
+
+Shop Gather →
+
+
+<img srcset="Resources/Images/Main-content/Gather.png,
+             Resources/Images/Main-content/Gather@2x.png 2x"
+     src="Resources/Images/Main-content/Gather.png"
+     alt="Gather">
