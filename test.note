@@ -8,20 +8,6 @@
 
 .hero-heading-right {
     position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 80px 30px;
-    border-bottom: 1px solid #e4ebf3;
-    background-color: #f5f7fa;
-    background-image: url(https://uploads-ssl.webflow.com/627390a…/628e602…_000-404%5B1%5D.png);
-    background-position: 0px 0px;
-    background-size: auto;
-}
-
-.hero-heading-right {
-    position: relative;
     display: flex;
     padding: 80px 30px;
     border-bottom: 1px solid #e4ebf3;
@@ -38,8 +24,18 @@ The minimal, modular desk organizer that cuts through the clutter
 
 Shop Gather →
 
+Here’s the basic code!
 
-<img srcset="Resources/Images/Main-content/Gather.png,
-             Resources/Images/Main-content/Gather@2x.png 2x"
-     src="Resources/Images/Main-content/Gather.png"
-     alt="Gather">
+
+/**
+* 1. Centers the content.
+* 2. Feel free to change this, this sets the width
+* 3. Adds some internal 'padding' to the div
+*/
+.wrapper {
+margin-right: auto; /* 1 */
+margin-left: auto; /* 1 */
+max-width:1160px; /* 2 */
+padding-right: 10px; /* 3 */
+padding-left: 10px; /* 3 */
+}
