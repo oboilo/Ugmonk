@@ -27,24 +27,26 @@ a {
 }
 
 /*   Buttons   */
+.div__button__transparent {
+    margin-top: 15px;
+}
 .button__transparent {
     text-decoration: none;
-    margin-top: 15px;
     font-size: 16px;
     line-height: 21px;
     /* or 131% */
 }
 
 /*   Colors   */
-.white-text {
+.text-white {
     color: #F7F7F7;
 }
 
-.black-text {
+.text-black {
     color: #1A1A1A;
 }
 
-.gray-text {
+.text-gray {
     color: #A8A8A8;
 }
 
@@ -54,6 +56,10 @@ a {
 
 .background-F7F7F7 {
     background: #F7F7F7;
+}
+
+.background-black {
+    background: #1A1A1A;
 }
 
 h2 {
@@ -71,7 +77,8 @@ p {
     line-height: 21px;
 }
 
-footer a,p {
+footer a,
+p {
     font-size: 15px;
 }
 
@@ -195,14 +202,96 @@ main {
     line-height: 13px;
 }
 
-.div__button__black {
+.div__button {
     text-align: center;
 }
 
-.button__black {
+.button {
     box-sizing: border-box;
     padding: 15px 25px;
-    background: #1A1A1A;
+}
+
+.button {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.button span {
+    position: relative;
+    z-index: 2;
+}
+
+.button:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: white;
+    transition: all .35s;
+}
+
+.button:hover {
+    color: #1A1A1A;
+}
+
+.button:hover:after {
+    width: 100%;
+}
+
+.button__transparent {
+    display: inline;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    transition: all .35s;
+    border-image: linear-gradient(45deg, #1a1a1a41, transparent) 1;
+    border-bottom: 0px solid ;
+}
+
+
+.button__transparent:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom-width: 100%;
+    transition: all .35s;
+}
+
+.button__transparent.text-white:after {
+    border-bottom: 2px solid #F7F7F7;
+}
+
+.button__transparent.text-black:after  {
+    border-bottom: 2px solid #1A1A1A;
+}
+
+.button__transparent:hover .text-black {
+    color: #1A1A1A;
+}
+
+.button__transparent:hover .text-white {
+    color: #F7F7F7;
+}
+
+.button__transparent:hover:after {
+    width: 100%;
 }
 
 /*   Sections - Final Stock, Gather   ---   "Banner Block"   */
