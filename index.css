@@ -30,6 +30,7 @@ a {
 .div__button__transparent {
     margin-top: 15px;
 }
+
 .button__transparent {
     text-decoration: none;
     font-size: 16px;
@@ -151,8 +152,9 @@ main {
     backdrop-filter: blur(20%);
     display: flex;
     flex-direction: column;
-    height: 431px;
-    justify-content: space-between;
+    height: auto;
+    min-height: 431px;
+    justify-content: start;
     text-align: start;
 }
 
@@ -161,19 +163,26 @@ main {
     width: 275px;
 }
 
-.card__description {
+.card__product__text {
     padding: 10px;
-    /*display: flex;*/
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-content: center;
+}
+
+.card__description {
+    display: flex;
+    flex-direction: column;
+    min-height: 65px;
+    /*display: flex;*/
     max-width: 275px;
     flex-wrap: wrap;
 }
 
 .card__description__main {
-    color: #1A1A1A;
-    font-size: 15px;
     line-height: 18px;
+    font-weight: 500;
+
 }
 
 .card__description__additional {
@@ -183,10 +192,11 @@ main {
 }
 
 .card__price {
-    padding: 10px;
     display: flex;
-    justify-content: start;
+    flex-direction: row;
+    justify-content: space-between;
     max-width: 275px;
+    font-weight: 500;
 }
 
 .card__price__main {
@@ -259,7 +269,7 @@ main {
     width: 0;
     transition: all .35s;
     border-image: linear-gradient(45deg, #1a1a1a41, transparent) 1;
-    border-bottom: 0px solid ;
+    border-bottom: 0px solid;
 }
 
 
@@ -278,7 +288,7 @@ main {
     border-bottom: 2px solid #F7F7F7;
 }
 
-.button__transparent.text-black:after  {
+.button__transparent.text-black:after {
     border-bottom: 2px solid #1A1A1A;
 }
 
@@ -327,7 +337,8 @@ main {
     /* or 120% */
 }
 
-.banner-block__p, .banner-block__btn {
+.banner-block__p,
+.banner-block__btn {
     margin-top: 30px;
 }
 
@@ -427,7 +438,8 @@ main {
     justify-content: flex-start;
 }
 
-.footer__left-div__1-column, .footer__left-div__2-column {
+.footer__left-div__1-column,
+.footer__left-div__2-column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
