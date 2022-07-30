@@ -1,0 +1,481 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+a {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*   Section   */
+.section {
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*   Buttons   */
+.div__button__transparent {
+    margin-top: 15px;
+}
+
+.button__transparent {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 21px;
+    /* or 131% */
+}
+
+/*   Colors   */
+.text-white {
+    color: #F7F7F7;
+}
+
+.text-black {
+    color: #1A1A1A;
+}
+
+.text-gray {
+    color: #A8A8A8;
+}
+
+.background-CED3CA {
+    background: #CED3CA;
+}
+
+.background-F7F7F7 {
+    background: #F7F7F7;
+}
+
+.background-black {
+    background: #1A1A1A;
+}
+
+h2 {
+    font-size: 38px;
+    line-height: 46px;
+}
+
+h3 {
+    font-size: 35px;
+    line-height: 54px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+footer a,
+p {
+    font-size: 15px;
+}
+
+/*   Website Body*/
+/*   Section - Navbar   */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 115px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.nav__main-logo {
+    margin-right: 60px;
+}
+
+.nav__link {
+    margin-right: 30px;
+}
+
+/*   Section - Header   */
+.hero-image {
+    width: 100%;
+}
+
+.header__screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    bottom: 100px;
+    left: 10px;
+}
+
+/*   Section - Main Cards   */
+main {
+    background-color: #FFFFFF;
+    margin-bottom: 150px;
+}
+
+.main__cards-section {
+    display: grid;
+    margin-top: 50px;
+    margin-bottom: 90px;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-columns: 1fr;
+    grid-row-gap: 56px;
+}
+
+.card {
+    /*background-color: rgb(127, 255, 212, 0.5);*/
+    background-color: #F7F7F7;
+    backdrop-filter: blur(20%);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 431px;
+    justify-content: start;
+    text-align: start;
+}
+
+.card__product-image {
+    height: 341px;
+    width: 275px;
+}
+
+.card__product__text {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__description {
+    display: flex;
+    flex-direction: column;
+    min-height: 65px;
+    /*display: flex;*/
+    max-width: 275px;
+    flex-wrap: wrap;
+}
+
+.card__description__main {
+    line-height: 18px;
+    font-weight: 500;
+
+}
+
+.card__description__additional {
+    color: #A8A8A8;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.card__price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 275px;
+    font-weight: 500;
+}
+
+.card__price__main {
+    color: #1A1A1A;
+    font-size: 15px;
+    line-height: 13px;
+}
+
+.card__price__sale {
+    color: #FF3451;
+    margin-left: 10px;
+    font-size: 15px;
+    line-height: 13px;
+}
+
+.div__button {
+    text-align: center;
+}
+
+.button {
+    box-sizing: border-box;
+    padding: 15px 25px;
+}
+
+.button {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.button span {
+    position: relative;
+    z-index: 2;
+}
+
+.button:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: white;
+    transition: all .35s;
+}
+
+.button:hover {
+    color: #1A1A1A;
+}
+
+.button:hover:after {
+    width: 100%;
+}
+
+.button__transparent {
+    display: inline;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    transition: all .35s;
+    border-image: linear-gradient(45deg, #1a1a1a41, transparent) 1;
+    border-bottom: 0px solid;
+}
+
+
+.button__transparent:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom-width: 100%;
+    transition: all .35s;
+}
+
+.button__transparent.text-white:after {
+    border-bottom: 2px solid #F7F7F7;
+}
+
+.button__transparent.text-black:after {
+    border-bottom: 2px solid #1A1A1A;
+}
+
+.button__transparent:hover .text-black {
+    color: #1A1A1A;
+}
+
+.button__transparent:hover .text-white {
+    color: #F7F7F7;
+}
+
+.button__transparent:hover:after {
+    width: 100%;
+}
+
+/*   Sections - Final Stock, Gather   ---   "Banner Block"   */
+.section__banner-block {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.banner-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-block__left {
+    display: flex;
+    margin-left: 90px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 215px;
+}
+
+.banner-block__image {
+    height: 406px;
+    width: 754px;
+    left: 406px;
+    top: 0px;
+    border-radius: 0px;
+}
+
+.banner-block__h2 {
+    text-align: left;
+    /* or 120% */
+}
+
+.banner-block__p,
+.banner-block__btn {
+    margin-top: 30px;
+}
+
+.banner-block__h3 {
+    text-align: center;
+}
+
+.section__second-banner-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 30px;
+    background-position: 0px 0px;
+    background-size: cover;
+    width: auto;
+}
+
+.second-banner__text-block {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+/*   Section - Design Studio   */
+.section__design-studio {
+    background-image: url(Resources/Images/Main-content/Design-studio.png);
+    height: 600px;
+}
+
+.design-studio__text-block {
+    max-width: 782px;
+}
+
+/*   Section - Our Mission   */
+.section__our-mission {
+    padding: 115px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.our-mission__1 {
+    margin-bottom: 90px;
+    text-align: center;
+    max-width: 782px;
+}
+
+.our-mission__2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.our-mission__3 {
+    margin-top: 50px;
+}
+
+.our-mission__div {
+    display: flex;
+    flex-direction: column;
+}
+
+.section__registration {
+    height: 400px;
+}
+
+.registration__text-block {
+    max-width: 375px;
+    margin-bottom: 60px;
+}
+
+.registration__h2 {
+    margin-bottom: 20px;
+}
+
+/*   Section Registration   */
+
+
+/*   Section Footer   */
+.section__footer {
+    height: 360px;
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__left-div {
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.footer__left-div__1-column,
+.footer__left-div__2-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 0px;
+}
+
+.footer__left-div__2-column {
+    margin-left: 150px;
+}
+
+.footer__right-div {
+    /*background-color: #FF3451;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 315px;
+
+    text-align: right;
+}
+
+.footer__right-div__column {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer__right-div__column__text {
+    max-width: 235px;
+    margin-bottom: 50px;
+}
+
+.footer__logos {
+    margin-left: 16px;
+}
