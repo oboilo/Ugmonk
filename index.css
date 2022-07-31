@@ -410,7 +410,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 0;
+    padding: 15px 0;
     height: 400px;
 }
 
@@ -443,6 +443,8 @@ main {
     margin: 0;
     background: #f7f7f7;
     border: 1px solid #1a1a1a;
+    padding-left: 15px;
+
 }
 
 #form__input__submit {
@@ -457,7 +459,6 @@ main {
 
 #form__input__email::placeholder {
     color: #1a1a1a;
-    padding-left: 15px;
 }
 
 
