@@ -405,61 +405,20 @@ main {
     flex-direction: column;
 }
 
-/*   Section Registration   */
-.form__section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0;
+.section__registration {
     height: 400px;
 }
 
-.form__container {
-    max-width: 1200px;
+.registration__text-block {
+    max-width: 375px;
+    margin-bottom: 60px;
 }
 
-.form__div {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.registration__h2 {
+    margin-bottom: 20px;
 }
 
-.registration__p {
-    max-width: 325px;
-    margin: 20px 0 20px 0;
-}
-
-.form {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-#form__input__email {
-    width: 75%;
-    height: 50px;
-    margin: 0;
-    background: #f7f7f7;
-    border: 1px solid #1a1a1a;
-}
-
-#form__input__submit {
-    width: 25%;
-    height: 50px;
-    margin: 0;
-    padding: 0 15px 0 15px;
-    background: #f7f7f7;
-    border: 1px solid #1a1a1a;
-    color: #1a1a1a;
-}
-
-#form__input__email::placeholder {
-    color: #1a1a1a;
-    padding-left: 15px;
-}
-
+/*   Section Registration   */
 
 
 /*   Section Footer   */
@@ -519,4 +478,58 @@ main {
 
 .footer__logos {
     margin-left: 16px;
+}
+
+.form__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    height: 400px;
+}
+
+.form__container {
+    max-width: 1200px;
+}
+
+.form__div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.registration__p {
+    max-width: 325px;
+    margin: 20px 0 20px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#form__input__email {
+    width: 75%;
+    height: 50px;
+    margin: 0;
+    background: #f7f7f7;
+    border: 1px solid #1a1a1a;
+}
+
+#form__input__submit {
+    width: 25%;
+    height: 50px;
+    margin: 0;
+    padding: 0 15px 0 15px;
+    background: #f7f7f7;
+    border: 1px solid #1a1a1a;
+    color: #1a1a1a;
+}
+
+#form__input__email::placeholder {
+    color: #1a1a1a;
+    padding-left: 15px;
 }
