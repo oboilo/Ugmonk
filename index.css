@@ -101,8 +101,32 @@ footer a, p {
     margin-right: 60px;
 }
 
-.nav__link {
+.nav a, .footer a {
+    display: block;
+    position: relative;
     margin-right: 30px;
+    transition: all .5s;
+}
+
+.nav a:before, .footer a:before {
+    content: " ";
+    position: absolute;
+    display: inline;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #1A1A1A;
+    border-bottom-width: 100%;
+    transform: scaley(2);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.nav a:hover:before, .footer a:hover:before {
+    transform: scaley(1);
+    opacity: 100%;
+    border-bottom: 1px solid #1A1A1A;
 }
 
 /*   Section - Header   */
@@ -470,8 +494,7 @@ main {
     justify-content: flex-start;
 }
 
-.footer__left-div__1-column,
-.footer__left-div__2-column {
+.footer__left-div__1-column,.footer__left-div__2-column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
