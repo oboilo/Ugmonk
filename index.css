@@ -78,8 +78,7 @@ p {
     line-height: 21px;
 }
 
-footer a,
-p {
+footer a, p {
     font-size: 15px;
 }
 
@@ -219,18 +218,8 @@ main {
 .button {
     box-sizing: border-box;
     padding: 15px 25px;
-}
-
-.button {
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
-    font-family: sans-serif;
-    text-decoration: none;
     border: 2px solid #333;
     letter-spacing: 2px;
-    text-align: center;
     position: relative;
     transition: all .35s;
 }
@@ -268,8 +257,6 @@ main {
     left: 0;
     width: 0;
     transition: all .35s;
-    border-image: linear-gradient(45deg, #1a1a1a41, transparent) 1;
-    border-bottom: 0px solid;
 }
 
 
@@ -337,8 +324,7 @@ main {
     /* or 120% */
 }
 
-.banner-block__p,
-.banner-block__btn {
+.banner-block__p,.banner-block__btn {
     margin-top: 30px;
 }
 
