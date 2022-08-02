@@ -101,32 +101,35 @@ footer a, p {
     margin-right: 60px;
 }
 
-.nav a, .footer a {
-    display: block;
+.nav a, .footer__left-div span {
+    display: inline;
     position: relative;
     margin-right: 30px;
-    transition: all .5s;
+    transition: all .25s;
 }
 
-.nav a:before, .footer a:before {
+.nav a:before, .footer__left-div span:before {
     content: " ";
     position: absolute;
-    display: inline;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border-bottom: 1px solid #1A1A1A;
+    border-bottom: 0px solid #1A1A1A;
     border-bottom-width: 100%;
-    transform: scaley(2);
+    transform: scalex(1);
     opacity: 0;
-    transition: all .5s;
+    transition: all .25s;
 }
 
-.nav a:hover:before, .footer a:hover:before {
-    transform: scaley(1);
+.nav a:hover, .footer__left-div span:hover {
+    font-weight: 600;
+}
+
+.nav a:hover:before, .footer__left-div span:hover:before {
+    transform: scaley(1) translateY(3px);
     opacity: 100%;
-    border-bottom: 1px solid #1A1A1A;
+    border-bottom: 2px solid #1A1A1A;
 }
 
 /*   Section - Header   */
@@ -288,7 +291,7 @@ main {
     position: absolute;
     content: "";
     bottom: 0;
-    left: 0;
+    left: 0; 
     width: 0;
     height: 100%;
     border-bottom-width: 100%;
