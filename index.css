@@ -1,8 +1,64 @@
+:root {
+    --main-bg-color: brown;
+    --bg-color-main: #fafafa;
+    --bg-color-second: #CED3CA;
+    --bg-color-dark: #1a1a1a;
+    --text-color-black: #1A1A1A;
+    --text-color-white: #F7F7F7;
+    --text-color-gray: #A8A8A8;
+}  
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif, system-ui;
     font-weight: 400;
     letter-spacing: 0em;
     text-align: left;
+}
+
+.padding-global {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+@media (max-width: 560px) {
+    .padding-global {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
+
+.container-medium {
+    width: 100%;
+    max-width: 64rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav_container {
+    position: relative;
+    z-index: 101;
+    display: flex;
+    width: 100%;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.padding-section-medium {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.align-center-vertical {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 a {
@@ -27,7 +83,7 @@ a {
 }
 
 /*   Buttons   */
-.div__button__transparent {
+.btn-transparent {
     margin-top: 15px;
 }
 
@@ -39,6 +95,8 @@ a {
 }
 
 /*   Colors   */
+
+
 .text-white {
     color: #F7F7F7;
 }
@@ -79,7 +137,7 @@ p {
 }
 
 footer a, p {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 /*   Website Body*/
@@ -88,7 +146,7 @@ footer a, p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 115px;
+    height: 80px;
 }
 
 .nav {
@@ -97,8 +155,8 @@ footer a, p {
     font-size: 16px;
 }
 
-.nav__main-logo {
-    margin-right: 60px;
+.nav_main-logo {
+    margin-right: 2rem;
 }
 
 .nav a, .footer__left-div span {
@@ -137,7 +195,7 @@ footer a, p {
     width: 100%;
 }
 
-.header__screen {
+.header_screen {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,12 +242,12 @@ main {
     text-align: start;
 }
 
-.card__product-image {
+.product_card-image {
     height: 341px;
     width: 275px;
 }
 
-.card__product__text {
+.product_card-text {
     padding: 10px;
     display: flex;
     flex-direction: column;
